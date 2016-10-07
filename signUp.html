@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">		
+		<title>在线注册</title>
+		<link rel="stylesheet" type="text/css" href="css/signUp.css"/>
+	</head>
+	<body>
+		<video autoplay loop id="video" style="width: 100%;">
+			<source src="video/123.mp4" type="video/mp4"></source>
+		</video>
+		<a href="javascript:" id="sound"><span id="sound1">&#xe600;</span></a>
+		<div id="kongzhi">
+			<input type="range" id="input"/>
+		</div>
+		<div id="signUp">
+			<img src="img/8cb755c2fbea58ac38700ae9593a8fa1.png"/>
+			<strong>在线注册</strong>
+		</div>
+		<form action="homePage.html" method="get" name="forms">
+			<ul id="list">
+				<li style="margin-top: 15px;"><span class="span">用户名：</span><input type="text" name="userName" id="userName" placeholder="请输入您的用户名" required pattern="^[a-zA-Z]\w{5,17}$"/><label for="userName" class="labe"></label><div class="div">*以字母开头，长度6~18，包含字符、数字和下划线。</div></li>
+				<li><span class="span">密码：</span><span id="box"><input type="password" name="password" id="password"  placeholder="请输入您的密码" required pattern="^[a-zA-Z]\w{5,17}$"/></span><span id="click"><a href="javascript:" id="pass">&#xe601;</a></span><label for="password" class="labe"></label><div class="div">*以字母开头，长度6~18，包含字符、数字和下划线。</div></li>
+				<li><span class="span">邮箱地址：</span><input type="email" name="email" id="email" placeholder="请输入您的邮箱地址！" multiple required pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"/><label for="email" class="labe"></label><div class="div">*请填写完整的邮箱格式</div></li>
+				<li><span class="span">姓名：</span><input type="text" name="name" id="name" placeholder="请输入您的真实姓名" required pattern="^[\u4e00-\u9fa5]*$"/><label for="name" class="labe"></label><div class="div">*必须是您本人姓名</div></li>
+				<li><span class="span">身份证号：</span><input type="text" name="IDnumber" id="IDnumber" placeholder="请输入您的身份证号" required pattern="^\d{15}|\d{18}$"/><label for="IDnumber" class="labe"></label><div class="div">*您本人身份证号</div></li>
+				<li><span class="span">出生日期：</span><input type="date" name="date" id="date" required/><label for="date" class="labe"></label><div class="div">*农历生日</div></li>
+				<li><span class="span">手机号：</span><input type="tel" name="tel" id="tel" placeholder="请输入您的手机号码！" required pattern="^1[34578]\d{9}$"/><label for="tel" class="labe"></label><div class="div">*请填写您的常用手机号</div></li>
+				<li><input type="checkbox" name="yes" id="yes" required/><label id="provision" for="yes">同意服务条款</label>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.freefly881.com/cn/terms/terms_of_service">阅读《服务条款》</a></li>
+				<li style="margin-bottom: 15px; margin-top: 5px;"><input type="submit" value="提交" id="submit"/><input type="reset" name="reset" id="reset" value="重置" /></li>
+			</ul>
+		</form>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/signUp.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
